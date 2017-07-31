@@ -61,6 +61,10 @@ body {
     width: 140px;
 }
 
+.fish-lg{
+    width: 250px;
+}
+
 /* ANIMAÇÕES */
 @keyframes SWIM {
     0% {
@@ -80,6 +84,15 @@ body {
     }
     100% {
         right: 105%;
+    }
+}
+
+@keyframes MOVE_SHARK {
+    0% {
+        right: -90%;
+    }
+    100% {
+        right: 100%;
     }
 }
 
@@ -107,6 +120,12 @@ body {
     top: 55%;
     z-index: 3;
     animation: SWIM .2s infinite, MOVE 3s infinite linear;
+}
+
+.shark{
+    top: 55%;
+    z-index: 3;
+    animation: SWIM .2s infinite, MOVE_SHARK 3s infinite linear;
 }
 
 .fish5{
