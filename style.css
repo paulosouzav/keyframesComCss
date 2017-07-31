@@ -96,6 +96,26 @@ body {
     }
 }
 
+@keyframes MOVE_ANCHOR {
+    0% {
+        top: -10%;
+    }
+    80% {
+        top: 100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes ROTATE {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* PEIXES */
 .fish1{
@@ -122,12 +142,6 @@ body {
     animation: SWIM .2s infinite, MOVE 3s infinite linear;
 }
 
-.shark{
-    top: 55%;
-    z-index: 3;
-    animation: SWIM .2s infinite, MOVE_SHARK 3s infinite linear;
-}
-
 .fish5{
     top: 65%;
     z-index: 6;
@@ -144,4 +158,42 @@ body {
     top: 45%;
     z-index: 6;
     animation: SWIM .5s infinite, MOVE 8.5s infinite linear;
+}
+
+.shark{
+    top: 55%;
+    z-index: 3;
+    animation: SWIM .2s infinite, MOVE_SHARK 3s infinite linear;
+}
+
+.anchor{
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    top: 0%;
+    z-index: 3;
+    animation: SWIM 3s infinite, MOVE_ANCHOR 15s infinite linear;
+}
+
+.starfish{
+    position: absolute;
+    width: 40px;
+}
+
+.starfish1{
+    left: 15%;
+    z-index: 6;
+    animation: ROTATE .5s infinite linear, MOVE_ANCHOR 8.5s infinite linear;
+}
+
+.starfish2{
+    left: 35%;
+    z-index: 3;
+    animation: ROTATE 2s infinite linear, MOVE_ANCHOR 8.5s infinite linear;
+}
+
+.starfish3{
+    left: 75%;
+    z-index: 6;
+    animation: ROTATE 1s infinite linear, MOVE_ANCHOR 8.5s infinite linear;
 }
