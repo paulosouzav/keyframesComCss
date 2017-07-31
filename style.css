@@ -1,3 +1,4 @@
+/*GENERAL*/
 html,
 body {
   height: 100%;
@@ -47,22 +48,6 @@ body {
       #2980b9, #2c3e50
     );
   overflow: hidden;
-}
-
-.fish{
-    position: absolute;
-}
-
-.fish-sm{
-    width: 80px;
-}
-
-.fish-md{
-    width: 140px;
-}
-
-.fish-lg{
-    width: 250px;
 }
 
 /* ANIMAÇÕES */
@@ -118,6 +103,22 @@ body {
 }
 
 /* PEIXES */
+.fish{
+    position: absolute;
+}
+
+.fish-sm{
+    width: 80px;
+}
+
+.fish-md{
+    width: 140px;
+}
+
+.fish-lg{
+    width: 250px;
+}
+
 .fish1{
     top: 15%;
     z-index: 3;
@@ -160,12 +161,14 @@ body {
     animation: SWIM .5s infinite, MOVE 8.5s infinite linear;
 }
 
+/* SHARK */
 .shark{
     top: 55%;
     z-index: 3;
     animation: SWIM .2s infinite, MOVE_SHARK 3s infinite linear;
 }
 
+/* ANCHOR */
 .anchor{
     position: absolute;
     left: 50%;
@@ -175,6 +178,7 @@ body {
     animation: SWIM 3s infinite, MOVE_ANCHOR 15s infinite linear;
 }
 
+/* STARFISHES */
 .starfish{
     position: absolute;
     width: 40px;
