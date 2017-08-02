@@ -187,17 +187,17 @@ body {
 .starfish1{
     left: 15%;
     z-index: 6;
-    animation: ROTATE .5s infinite linear, MOVE_ANCHOR 8.5s infinite linear;
+    animation: ROTATE .5s infinite linear, MOVE_ANCHOR 6.5s infinite linear;
 }
 
 .starfish2{
     left: 35%;
     z-index: 3;
-    animation: ROTATE 2s infinite linear, MOVE_ANCHOR 8.5s infinite linear;
+    animation: ROTATE 2s infinite linear, MOVE_ANCHOR 11.5s infinite linear;
 }
 
 .starfish3{
     left: 75%;
     z-index: 6;
-    animation: ROTATE 1s infinite linear, MOVE_ANCHOR 8.5s infinite linear;
+    animation: ROTATE 1s infinite linear, MOVE_ANCHOR 9.5s infinite linear;
 }
